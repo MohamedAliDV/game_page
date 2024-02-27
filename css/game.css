@@ -1,18 +1,66 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f7f7f7;
+  background-color: #f7f7f7;
 }
 
 /* global rules */
 
-.number-group input[type='number']::placeholder , input[type='text']::placeholder {
-    text-align: center;
+.number-group input[type="number"]::placeholder,
+input[type="text"]::placeholder {
+  text-align: center;
+  box-shadow: none !important;
 }
 
-
 /* global rules */
+
+.p-name:focus {
+  border-bottom: 3px solid dodgerblue !important;
+}
+
+.page-title {
+  position: relative;
+  z-index: 10;
+  transition: ease 0.4s;
+}
+.page-title::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 50px;
+  border-radius: 2px;
+  background-color: #22eeaa;
+  left: 0;
+opacity: 0;
+
+  top: 0;
+  transition: ease 0.4s;
+}
+.page-title::after {
+  content: "";
+  position: absolute;
+  background-color: #1144ee;
+
+  width: 5px;
+  height: 50px;
+  border-radius: 2px;
+opacity: 0;
+  right: 0;
+  transition: ease 0.4s;
+  top: 0;
+}
+.page-title:hover::before , .page-title:hover::after{
+  width: 50%;
+  background-color: rgba(30, 143, 255, 0.491);
+  opacity: 1;
+  z-index: -1;
+  
+}
+.page-title:hover {
+    text-transform: uppercase;
+    color: white !important;
+}

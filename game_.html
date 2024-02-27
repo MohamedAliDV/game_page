@@ -6,42 +6,43 @@
     <title>Game</title>
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/game.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="container">
       <form action="#" method="POST">
-        <div class="mb-3">
-          <label for="" class="form-label text-capitalize fs-5 text-mutemd"
-            >Card Services</label
-          >
-          <select class="form-select form-select-lg" name="" id="">
-            <option selected>free fire</option>
-            <option value="pubg mobile">pubg mobile</option>
-            <option value="visa card">visa card</option>
-            <option value="clash of clans">clash of clans</option>
-          </select>
-        </div>
-        <div class="number-group d-flex flex-column">
-          <input type="number" class="form-control" placeholder="معرف اللاعب" />
-          <input
-            type="text"
-            class="form-control my-2"
-            placeholder="إسم اللاعب" />
-            <input type="number" class="form-control mb-2" name="" id="" placeholder="المبلغ $">
-          <input
-            type="number"
-            class="form-control"
-            placeholder="رقم الواتساب" />
-            
-          <a type="submit"href="#" class="btn btn-dark btn-md rounded-pill mt-3 w-50 m-auto">Submit</a> <!-- Write The URL here -->
-
+        <h2 class="page-title text-center my-4 py-2 d-flex justify-content-center">Games area</h2>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-12 col-lg-4 form-group">
+            <select class="form-select form-select-lg shadow-none mb-2" name="" id="">
+              <option selected>free fire</option>
+              <option value="pubg mobile">pubg mobile</option>
+              <option value="visa card">visa card</option>
+              <option value="clash of clans">clash of clans</option>
+            </select>
+          </div>
+          <div class="col-md-12 col-lg-4 number-group">
+            <input type="number" class="shadow-none form-control" placeholder="معرف اللاعب" />
+            <input
+              type="text"
+              class="p-name form-control my-2 shadow-none"
+              placeholder="إسم اللاعب" />
+              <input type="number" class="shadow-none form-control mb-2" name="" id="" placeholder="المبلغ $">
+            <input
+              type="number"
+              class="shadow-none form-control"
+              placeholder="رقم الواتساب" />
+            </div>
+            <a type="submit"href="#" class="send-btn btn btn-dark btn-lg rounded mt-3 w-50 m-auto fs-6">Submit</a> <!-- Write The URL here -->
         </div>
       </form>
     </div>
+    <footer class="bg-dark py-3 fixed-bottom text-white">
+      <p class="copyright text-capitalize text-center text-muted">all right reserve &copy; 2024 from <a href="#" class="text-decoration-none text-primary">my wallet</a></p>
+    </footer>
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,10 +1,12 @@
 $(document).ready( () => {
-    $('.mode').on('click', () => {
-        if ($('body').css.backgroundColor == '#111') {
-            console.log('yes')
-            $('body').css({'background-color': '#f7f7f7'})
-        }else {
-            $('body').css({'background-color':'#000'})
+
+    // form validation 
+    const all_input = $('input');
+    const send_btn = $('.send-btn');
+
+    send_btn.on('click', () => {
+        for(let i = 0 ; i < all_input.length ; i++) {
+            console.log(all_input[i].value.length);
         }
     })
 
